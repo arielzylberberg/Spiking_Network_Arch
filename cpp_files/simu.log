@@ -1,0 +1,113 @@
+Parsing network configuration... first passage
+Parsing network configuration... second passage
+  N=1024
+  C=0.500000 nF
+  Membrane time constant=20.000000 ms
+  Resting potential=-70.000000 mV
+  Reset potential=-60.000000 mV
+  Threshold =-50.000000 mV
+  RefPeriod =2.000000 ms
+Receptor 0: AMPA (Mg block: 0)
+  Tau=2.000000 ms
+  Reversal potential=0.000000 mV
+  Ext frequency=2.700000 Hz
+  Ext efficacy=3.300000 nS
+  Ext connections=1000.000000
+Receptor 1: GABA (Mg block: 0)
+  Tau=10.000000 ms
+  Reversal potential=-70.000000 mV
+  Ext frequency=0.000000 Hz
+  Ext efficacy=0.000000 nS
+  Ext connections=0.000000
+Receptor 2: NMDA (Mg block: 1)
+  Tau=100.000000 ms
+  Reversal potential=0.000000 mV
+  Ext frequency=0.000000 Hz
+  Ext efficacy=0.000000 nS
+  Ext connections=0.000000
+  Connectivity=1.000000
+  Target receptor code=0
+Connectivity Code=-0.000000
+Mean efficacy=0.191211
+  Connectivity=1.000000
+  Target receptor code=2
+Connectivity Code=-0.000000
+Mean efficacy=0.618750
+  Connectivity=1.000000
+  Target receptor code=0
+Connectivity Code=-0.000000
+Jplus=1.000000
+Jmin=0.231743
+Sigma=0.035444
+Mean efficacy=0.242773
+ShortTermPlasticity ON
+STP U=0.200000
+  Connectivity=1.000000
+  Target receptor code=2
+Connectivity Code=-0.000000
+Jplus=1.000000
+Jmin=0.231743
+Sigma=0.035444
+Mean efficacy=0.783105
+Pop (exc11) Conductance: 0 m=17.820000 nS s=5.422453 nS
+Pop (exc11) Conductance: 1 m=0.000000 nS s=0.000000 nS
+Pop (exc11) Conductance: 2 m=0.000000 nS s=0.000000 nS
+  N=256
+  C=0.200000 nF
+  Membrane time constant=10.000000 ms
+  Resting potential=-70.000000 mV
+  Reset potential=-60.000000 mV
+  Threshold =-50.000000 mV
+  RefPeriod =1.000000 ms
+Receptor 0: AMPA (Mg block: 0)
+  Tau=2.000000 ms
+  Reversal potential=0.000000 mV
+  Ext frequency=1.700000 Hz
+  Ext efficacy=2.250000 nS
+  Ext connections=1000.000000
+Receptor 1: GABA (Mg block: 0)
+  Tau=10.000000 ms
+  Reversal potential=-70.000000 mV
+  Ext frequency=0.000000 Hz
+  Ext efficacy=0.000000 nS
+  Ext connections=0.000000
+Receptor 2: NMDA (Mg block: 1)
+  Tau=100.000000 ms
+  Reversal potential=0.000000 mV
+  Ext frequency=0.000000 Hz
+  Ext efficacy=0.000000 nS
+  Ext connections=0.000000
+  Connectivity=1.000000
+  Target receptor code=1
+Connectivity Code=-0.000000
+Mean efficacy=4.060547
+  Connectivity=1.000000
+  Target receptor code=1
+Connectivity Code=-0.000000
+Mean efficacy=3.149219
+Pop (inh11) Conductance: 0 m=7.650001 nS s=2.933641 nS
+Pop (inh11) Conductance: 1 m=0.000000 nS s=0.000000 nS
+Pop (inh11) Conductance: 2 m=0.000000 nS s=0.000000 nS
+
+Generating network...
+  - Number of cells: 1024
+  - Number of cells: 256
+Network generated
+-------------------------------------------------
+Parsing protocol...
+Event 0: time 500.000000 ms
+   Label: [Stimulus Onset]
+  Population code: 0
+  Receptor code:0
+  New external frequency: 1.100000 Hz
+  Standard Deviation: 0.056000 [deg normalized to 0-1]
+Event 1: time 1000.000000 ms
+   Label: [Stimulus Onset]
+  Population code: 0
+  Receptor code:0
+  New external frequency: 1.700000 Hz
+Event 2: time 1000.000000 ms
+   Label: [End of Trial]
+-------------------------------------------------
+Parsing protocol2...
+End of the trial

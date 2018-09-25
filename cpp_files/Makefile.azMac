@@ -1,0 +1,48 @@
+# Compilar con:
+# make -f Makefile.azMac clean
+# make -f Makefile.azMac no_mpi
+
+#MPI_CC=mpic++
+
+CC=g++
+#CC=icpc
+
+# compilation options
+# CFLAGS=-O3 -fast -Wno-write-strings -D__NO_MPI  -DBITS=31
+CFLAGS=-O3 -fast -Wno-write-strings -D__NO_MPI
+#-isystem/usr/lib/gcc/x86_64-linux-gnu/4.2/include/ 
+# -Wall
+LDFLAGS=-O3 -fast
+
+
+SOURCES=main.cpp Network.cpp Population.cpp PopulationDescr.cpp Protocol.cpp Neuron.cpp Event.cpp rando2.cpp Synapse.cpp SynPopDescr.cpp utils.cpp Connection.cpp Receptor.cpp randgen.cpp r250.cpp registrar.cpp rndlcg.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+
+SOURCES_CHECKMEM=main_mem.cpp Network.cpp Population.cpp PopulationDescr.cpp Protocol.cpp Neuron.cpp Event.cpp rando2.cpp Synapse.cpp SynPopDescr.cpp utils.cpp Connection.cpp Receptor.cpp randgen.cpp r250.cpp registrar.cpp rndlcg.cpp
+OBJECTS_CHECKMEM=$(SOURCES_CHECKMEM:.cpp=.o)
+
+EXEC=az.out
+EXEC_CHECKMEM=checkmem
+
+all: az
+
+$(EXEC): $(OBJECTS) 
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $(EXEC)
+
+.c.o:;
+	$(CC) $(CFLAGS) -c $<
+
+.cpp.o:;
+	$(CC) $(CFLAGS) -c $<
+
+clean:
+	rm -f $(EXEC)
+	rm -f $(EXEC_CHECKMEM)
+	rm -f *.o
+
+no_mpi: CFLAGS+=-D__NO_MPI
+no_mpi: $(OBJECTS) $(EXEC)
+
+checkmem: CFLAGS+=-D__NO_MPI
+checkmem: $(OBJECTS_CHECKMEM)
+	$(CC) $(OBJECTS_CHECKMEM) $(LDFLAGS) -o $(EXEC_CHECKMEM)

@@ -1,0 +1,22 @@
+
+[Anjuta]
+Maximized=1
+Geometry=1366x694+0+25
+
+[File Loader]
+Files=file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Connection.cpp#14%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Network.cpp#457%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Network.h#64%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/main.cpp#193%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Population.cpp#436%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Population.h#90%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Neuron.h#17%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Neuron.cpp#52%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Connection.h#59%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Synapse_STP.h#26%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Synapse.h#23%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Synapse.cpp#1%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Synapse_STD.h#2%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/SynapseBase.h#1%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Synapse_STD_STF.h#1%%%file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code/Synapse_STF.h#37
+
+[Document Manager]
+bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
+
+[Execution]
+Run in terminal=2
+Working directories=file:///windows/Users/arielzy/Documents/Code/variables_spiking_net/code
+
+[Build]
+Configuration list=1:Default:%%%1:Debug:Debug%%%1:Profiling:Profiling%%%1:Optimized:Optimized
+Selected Configuration=Default
+BuildArgs/Default=--enable-maintainer-mode
+BuildArgs/Debug=--enable-maintainer-mode 'CFLAGS=-g -O0' 'CXXFLAGS=-g -O0' 'JFLAGS=-g -O0' 'FFLAGS=-g -O0'
+BuildArgs/Profiling=--enable-maintainer-mode 'CFLAGS=-g -pg' 'CXXFLAGS=-g -pg' 'JFLAGS=-g -pg' 'FFLAGS=-g -pg'
+BuildArgs/Optimized=--enable-maintainer-mode 'CFLAGS=-O2' 'CXXFLAGS=-O2' 'JFLAGS=-O2' 'FFLAGS=-O2'

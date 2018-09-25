@@ -1,0 +1,6 @@
+EventTime 1500
+
+Type=EndTrial
+Label=End of Trial
+
+EndEvent
